@@ -45,19 +45,12 @@ genPass = function() {
         };
     console.log(finalPassword);
     return finalPassword;
-};       
-
-genPass();   
-
-//RESET THE VALUE OF THE CHOSEN CHARACTERS - otherwise next time you ask for a password, it would containg the values from the previous choice.
-chosenCharacters = [];
-           
 };
-
-
-
-
-
+//RUN FUNCTION       
+genPass();   
+//RESET THE VALUE OF THE CHOSEN CHARACTERS - otherwise next time you ask for a password, it would containg the values from the previous choice.
+chosenCharacters = [];        
+};
 
 function writePassword() {
     let password = generatePassword();
@@ -65,6 +58,4 @@ function writePassword() {
     passwordText.value = password;
    
    };
-   
-   
    generateBtn.addEventListener("click", writePassword); 
