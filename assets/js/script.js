@@ -6,18 +6,19 @@ let alphaUpper = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P
 let numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 let symbols = ["~","!","@","#","$","%","^","&","*","?","-","+"];
 
-// ARRAY CONTAINING USER CHOICEs
+// ARRAY CONTAINING CHARACTERS CHOSEN BY USER
 let chosenCharacters = [""];
 
 
 
 function generatePassword() {    
+//GETTING LENGTH CHOICE
     let passLength = prompt("Whats the lenght of the desired password? Should be between 8 and 128 characters)");
         if (passLength < 8 || passLength > 128) {
         alert("Please choose between 8 and 128 characters");
     generatePassword();
          } else { };
-       
+//GETTING CHOICE OF CHARACTERS       
     let ifLower = confirm("Would you like Lower Case letters?");
         if (ifLower === true) {
             chosenCharacters = chosenCharacters.concat(alphaLower); 
@@ -34,7 +35,8 @@ function generatePassword() {
         if (ifSymbols === true) {
             chosenCharacters = chosenCharacters.concat(symbols);
     }   else  {};
-   
+
+// GENERATE PASSWORD FUNCTION    
 genPass = function() {
     let finalPassword = '';
     for (let i = 1;  i < passLength; i++) {
@@ -42,12 +44,13 @@ genPass = function() {
         finalPassword += chosenCharacters[index];
         };
     console.log(finalPassword);
-    finalPassword = [];
     return finalPassword;
 };       
 
 genPass();   
-    
+
+//RESET THE VALUE OF THE CHOSEN CHARACTERS - otherwise next time you ask for a password, it would containg the values from the previous choice.
+chosenCharacters = [];
            
 };
 
