@@ -3,6 +3,7 @@ PROJECT:
     PASSWORD GENERATOR - HOMEWORK 3
 
     This is a password generator that takes user's choice of length and character selection and output a random string everytime the generate password buttom is clicked. 
+    This was accomplished by asking the user for a desired lenght of password and character's choices. The choice of characters was assigned to a new array. The password generator consisted of a loop, running for as many times as the lenght desired. A random number was generated to be the index of the array containing the choice of characters. Lastly, we added the character located at the random index location of the array into a password variable. 
 
 
 LAYOUT:
@@ -26,14 +27,14 @@ LANGUAGE:
 
 SCREENSHOT:
 
-   ![Screenshot of project](./assets/images/01-html-css-git-homework-demo.png)
+![Screenshot of project](./assets/img/PasswordGenerator-screenshot.png)
 
 
 LINKS:
 
-[Repo]()
+[Repo](https://github.com/eugenio18/PasswordGenerator.git)
 
-[Page]()
+[Page](https://eugenio18.github.io/PasswordGenerator/)
  
 
 HOW TO CONTRIBUTE
