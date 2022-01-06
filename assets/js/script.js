@@ -14,7 +14,7 @@ function generatePassword() {
     let passLength = prompt("Whats the lenght of the desired password? Should be between 8 and 128 characters)");
     if (passLength < 8 || passLength > 128) {
         alert("Please choose between 8 and 128 characters");
-        generatePassword();
+        return null;
     }
     //GETTING CHOICE OF CHARACTERS - adding them to an array with the desired option of characters.
     let ifLower = confirm("Would you like Lower Case letters?");
@@ -35,7 +35,7 @@ function generatePassword() {
     }
     if (ifLower === false && ifUpper === false && ifNumber === false && ifSymbols === false) {
         alert("Please choose at least one set of characters");
-        generatePassword();
+        return null;
     }
 
     //CREATED A LOPP - to run the code for as many times as the lenght of the password desired.
