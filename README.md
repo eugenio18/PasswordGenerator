@@ -3,7 +3,7 @@ PROJECT:
     PASSWORD GENERATOR - HOMEWORK 3
 
     This is a password generator that takes user's choice of length and character selection and output a random string everytime the generate password buttom is clicked. 
-    This was accomplished by asking the user for a desired lenght of password and character's choices. The choice of characters was assigned to a new array. The password generator consisted of a loop, running for as many times as the lenght desired. A random number was generated to be the index of the array containing the choice of characters. Lastly, we added the character located at the random index location of the array into a password variable. 
+    This was accomplished by asking the user for a desired lenght of password and character's choices. The choice of characters was assigned to a new array. The password generator consisted of a loop, running for as many times as the lenght desired. A random number was generated to be the index of the array containing the choice of characters. Next, the character located at the random index location of the array was added into a password variable. Lastly, the choice of characters variable is reset to empty, so the next time the code is run the previous choices are cleared out.
 
 
 LAYOUT:
